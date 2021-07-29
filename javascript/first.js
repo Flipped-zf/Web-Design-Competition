@@ -54,7 +54,7 @@ window.onload = function () {
         //     en[0].style.animation=""
         // }
         // let bian = document.getElementsByClassName('.bian');
-        scrollVal = window.scrollY;
+        //scrollVal = window.scrollY;
         // console.log(window.scrollY)
         tou.classList.add("bian");
         if(window.scrollY>0) {
@@ -174,7 +174,7 @@ window.onload = function () {
     let picture = ['../images/img/1.jpg', '../images/img/2.jpg', '../images/img/3.jpg', '../images/img/4.jpg', '../images/img/5.jpg','../images/img/6.jpeg'];
 
     let index = 0;
-    console.log(index)
+    //console.log(index)
     for (let i = 0; i < picture.length; i++) {
         let dot = document.createElement('div');
         dot.classList.add('dian');
