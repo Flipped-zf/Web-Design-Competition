@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>建党伟业,红色华诞</title>
+    <link rel="shortcut icon" href="./images/ico.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+
+<div class="waveWrapper waveAnimation">
+    <div class="waveWrapperInner bgTop">
+        <div class="wave waveTop" style="background-image: url('images/index/wave-top.png')"></div>
+    </div>
+    <div class="waveWrapperInner bgMiddle">
+        <div class="wave waveMiddle" style="background-image: url('images/index/wave-mid.png')"></div>
+    </div>
+    <div class="waveWrapperInner bgBottom">
+        <div class="wave waveBottom" style="background-image: url('images/index/wave-bot.png')"></div>
+    </div>
+    <div class="navigation">
+        <!--    为实现中华民族伟大复兴的中国梦而努力奋斗-->
+        <div class="img_logo">
+            <img src="./images/logo.png" alt="">
+        </div>
+        <h2>每一步伟大的历程,都有一个不平凡的信仰</h2>
+        <div class="item">
+            <a href=""><div class="daohang1">
+                首页
+            </div></a>
+            <a href="html/child.html"><div class="daohang2">
+                主页
+            </div></a>
+        </div>
+    </div>
+    <script>
+        let daohuang1=document.getElementsByClassName("daohang1")
+        let daohuang2=document.getElementsByClassName("daohang2")
+        daohuang2[0].addEventListener("mouseover",() => {
+            daohuang2[0].style.borderBottom="3px solid #ffffff"
+            daohuang1[0].style.borderBottom="3px solid #AA0202"
+            daohuang2[0].addEventListener("mouseout",() => {
+                daohuang2[0].style.borderBottom=""
+                daohuang1[0].style.borderBottom="3px solid #ffffff"
+            })
+        })
+    </script>
+    <div class="content_Img">
+        <div class="img">
+            <img src="./images/index/5.jpg" alt="">
+            <!--        <div class="font">在最近的距离向党致敬</div>-->
+        </div>
+        <div class="img">
+            <img src="./images/index/11.jpg" alt="">
+            <!--        <div class="font">这盛世如你所愿</div>-->
+        </div>
+        <div class="img">
+            <img src="./images/index/1.jpg" alt="">
+            <!--        <div class="font"></div>-->
+        </div>
+        <div class="img">
+            <img src="./images/index/7.jpg" alt="">
+        </div>
+    </div>
+    <div class="page">
+        <a href="html/child.html"><h2>这盛世如你所愿</h2>
+            <ul>
+                <li> <<< </li>
+
+                <li> >>> </li>
+            </ul>
+        </a>
+    </div>
+</div>
+</body>
+</html>
