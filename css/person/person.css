@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #ffffff;
+}
+.content {
+    margin: 0 auto;
+    width: 1251px;
+    display: flex;
+    flex-direction: column;
+    padding: 150px 200px 10px 200px;
+    background: #f3f3f4;
+}
+h1 {
+    text-align: right;
+    background: linear-gradient(
+             45deg,
+             rgba(255, 255, 255, 0) 48%,
+             rgba(255, 253, 253, 0.8) 50%,
+             rgba(255, 255, 255, 0) 53%,
+             rgba(255, 255, 255, 0) 100%
+    );
+     background-size: 200%;
+     /*background: pink;*/
+     animation: glare 3s infinite ease-in;
+    /*background-position: -50%;*/
+}
+@keyframes glare {
+    0% {
+        background-position: -50%;
+    }
+    100% {
+        background-position: 50%;
+    }
+
+}
+p {
+    text-indent: 2em;
+    line-height: 30px;
+    /*text-align: center;*/
+}
+.center {
+    text-align: center;
+    margin: 0 0 10px 0;
+    font-size: 13px;
+}
+.content img {
+    width: 300px;
+    position: center;
+    display: inline-block;
+    margin: 30px auto 10px auto;
+}
+.source {
+    text-align: right;
+    margin: 70px 30px 100px 0;
+}
+h3  {
+    line-height: 50px;
+    text-indent: 2em;
+}
+#topBtn {
+    position: fixed;
+    bottom: 50px;
+    right: 150px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: #FFF;
+    z-index: 999;
+    background: #d80202;
+    cursor: pointer;
+    border-radius: 30px;
+    display: none;
+    box-shadow: 1px 5px 2px darkred;
+    /*transition: 5s;*/
+}
+#topBtn:hover {
+    transform: translate(-3px,-3px);
+    box-shadow: 3px 3px 10px #000;
+}
+.image img{
+    padding-bottom: 10px;
+    margin-top: 20px;
+    width: 200px;
+    position: absolute;
+    left: 200px;
+    border-bottom: red 1px solid;
+}
+@keyframes ani_jump {
+    0% {
+        transform: translateY(-100px);
+    }
+    25% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-60px);
+    }
+    75% {
+        transform: translateY(0);
+    }
+    90% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

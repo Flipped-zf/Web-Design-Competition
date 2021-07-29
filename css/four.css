@@ -1,0 +1,343 @@
+/*four*/
+#four_title {
+    height: 50px;
+    width: 480px;
+    /*background: black;*/
+    /*margin-left: 100px;*/
+    /*background: #f1f1f1;*/
+    margin: 50px auto;
+    position: relative;
+}
+.four_1 {
+    color: #d80202;
+    font-size: 30px;
+    font-weight: 900;
+    position: absolute;
+    top: 0;
+    left: 130px;
+}
+.four {
+    width: 1251px;
+    height: 700px;
+    margin: 0 auto;
+    /*background: #f1f1f1;*/
+    background: linear-gradient(to left top, #FFFFFF, #e1dfdf);
+    position: relative;
+}
+.four_1img {
+    width: 498px;
+    height: 212px;
+}
+.four_2img img{
+    top: 0;
+    right: -20px;
+    position: absolute;
+    width: 670px;
+    /*height: 300px;*/
+}
+/*特效*/
+.wrapper2 {
+    position: absolute;
+    top: 300px;
+    left: 800px;
+    width: 250px;
+    height: 400px;
+    perspective: 900px;
+    /*transform-style: preserve-3d;*/
+}
+.wrapper2 img {
+    object-fit: cover;
+    height: 100%;
+}
+.wrapper2 .container {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: .5s all ease;
+    transform: rotateX(60deg) scale(0.6);
+    box-shadow: 0 20px 50px #555;
+    /*animation: entry 1s linear 1;*/
+}
+.wrapper2 .container:hover {
+    cursor: pointer;
+    transform: rotate(0deg) scale(0.8) translateY(10px);
+    transition: .5s all ease;
+    z-index: 400;
+}
+@keyframes entry {
+    0% {
+        top: -20%;
+        opacity: 0.1;
+    }
+    100% {
+        top: 0;
+    }
+}
+#c0 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /*background: linear-gradient(to bottom, #eba65b 30%, #d99267 100%);*/
+    z-index: 300;
+    box-shadow: 0 20px 100px #555;
+}
+
+#c1 {
+    /*background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);*/
+    box-shadow: 0 20px 100px #555;
+    left: 100%;
+    z-index: 20;
+}
+
+#c2 {
+    left: -100%;
+    z-index: 20;
+    /*background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);*/
+    box-shadow: 0 20px 100px #555;
+}
+.page {
+    position: absolute;
+    top: 80%;
+    width: 280px;
+    left: -80px;
+    height: 20%;
+    z-index: 10;
+}
+
+.page li {
+    position: absolute;
+    list-style: none;
+    color: #111;
+}
+.page h4 {
+    color: #111;
+    position: absolute;
+    left: 30%;
+    letter-spacing: 2px;
+}
+.page li:nth-child(1) {
+    left: 15%;
+    animation: simple1 1s linear infinite;
+}
+
+.page li:nth-child(2) {
+    right: -30px;
+    animation: simple 1s linear infinite;
+}
+
+@keyframes simple {
+    50% {
+        transform: translateX(10px);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateX(10px);
+        opacity: 0;
+    }
+}
+
+@keyframes simple1 {
+    50% {
+        transform: translateX(-10px);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateX(-10px);
+        opacity: 0;
+    }
+}
+/*导航栏*/
+.navigation li{
+    list-style: none;
+}
+.navigation ul{
+    margin: 50px 0 30px 50px;
+}
+.navigation ul li{
+    float: left;
+    width: 120px;
+    height:35px;
+    margin: 5px;
+    /*设置视距这个一定要加在被视察元素的父盒子上面*/
+    perspective: 400px;
+}
+.navigation .box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    line-height: 35px;
+    text-align: center;
+    transform-style: preserve-3d;
+    transition: all 1s;
+    cursor: pointer;
+}
+/*.navigation .box:hover{*/
+/*    transform: rotateX(90deg);*/
+/*}*/
+.front,
+.bottom{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    user-select:none;
+}
+.front{
+    color: black;
+    background-color: #f5f4f7;
+    z-index: 1;
+    transform: translateZ(17.5px);
+    box-shadow: 0 0 5px #a5a4a4;
+}
+.bottom{
+    z-index: 1;
+    background-color: #dc0022;
+    color: #fff;
+    transform:translateY(17.5px) rotateX(-90deg);
+    box-shadow: 0 0 5px #f50404;
+
+}
+.bottom img {
+    height: 100%;
+}
+/*祝福*/
+.zhufu {
+    width: 450px;
+    height: 350px;
+    /*background: pink;*/
+    margin: 130px 0 0 20px;
+    line-height: 40px;
+    font-weight: 400;
+    font-size: 26px;
+}
+.zhufu img {
+    width: 200px;
+}
+.zhufu span {
+    /*animation: font_ 5s 1;*/
+    display: none;
+}
+@keyframes font_ {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/*//END*/
+.text {
+    text-align: center;
+
+    width: 100%;
+    /*height: 300px;*/
+    background: linear-gradient(to left top, #a70202, #fbf9f9);
+    margin: 0 auto;
+}
+.words {
+    color: #af0101;
+    font-size: 0;
+    line-height: 1.5;
+}
+
+.words span {
+    font-size: 50px;
+    font-weight: 800;
+    display: inline-block;
+    animation: move_1 4s ease-in-out infinite;
+    letter-spacing: 2em;
+}
+
+@keyframes move_1 {
+    0% {
+        color: transparent;
+        transform: translate(-30%, 0);
+    }
+    50% {
+        color: #FFFFFF;
+        text-shadow: 0 25px 50px rgba(0, 0, 0, 0.75);
+    }
+    100% {
+        color: transparent;
+        transform: translate(30%, 0);
+    }
+}
+.word-2 {
+    text-align: right;
+}
+
+.word-2 span:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.word-2 span:nth-child(3) {
+    animation-delay: 1s;
+}
+
+.word-2 span:nth-child(4) {
+    animation-delay: 1.5s;
+}
+
+.word-2 span:nth-child(5) {
+    animation-delay: 2s;
+}
+
+.word-2 span:nth-child(6) {
+    animation-delay: 2.5s;
+}
+
+.end {}
+.slideshow {
+    position: absolute;
+    /*width: 1539px;*/
+    /*height: 755px;*/
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.slideshow .slideshow-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: no-repeat 50% 50%;
+    background-size: cover;
+    /*animation-name: kenburns;*/
+    /*animation-timing-function: linear;*/
+    /*animation-iteration-count: infinite;*/
+    /*animation-duration: 4s;*/
+    /*opacity: 1;*/
+    /*transform: scale(1.2);*/
+    display: none;
+    /*animation: bian 5s infinite;*/
+}
+@keyframes bian2 {
+    0% {
+        opacity: 0.5;
+        transform: scale(1.2);
+    }
+    70% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+.content_font {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    z-index: 99;
+    text-align: center;
+    font-family: Raleway, sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    background-color: rgba(254, 252, 252, 0.5);
+    box-shadow: 0 1em 2em -1em rgba(0, 0, 0, .5);
+    padding: 1em 2em;
+    line-height: 1.5
+}
