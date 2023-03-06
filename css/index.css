@@ -28,7 +28,6 @@ a {
 .img {
     z-index: 50;
     height: 600px;
-    width: 400px;
     position: relative;
 }
 .img img{
